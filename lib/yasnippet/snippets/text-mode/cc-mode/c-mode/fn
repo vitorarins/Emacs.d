@@ -1,5 +1,6 @@
 #name : function template
 #contributor : eduardo bellani
+#contributor : vitor arins
 # --
 /* DESCRIBE ME! */
 $1 $2($3)

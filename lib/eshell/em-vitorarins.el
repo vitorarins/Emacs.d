@@ -23,9 +23,9 @@
 ;; Check out examples here http://www.emacswiki.org/emacs/EshellFunctions
 
 ;;; Code:
-(defgroup eshell-bellani nil
-  "Contains eshell modifications by Eduardo Bellani (ebellani@gmail.com)"
-  :tag "Eshell Bellani"
+(defgroup eshell-vitorarins nil
+  "Contains eshell modifications by Eduardo Bellani(ebellani@gmail.com) and Vitor Arins (vitorarins@gmail.com)"
+  :tag "Eshell Vitor Arins"
   :group 'eshell-module)
 
 (defun eshell-maybe-bol ()
@@ -58,5 +58,5 @@ pdf. If there is no PDFVIEWER, uses the system default."
     (funcall pdflatex-in-batchmode filename)
     (mapc #'eshell/rm (directory-files "." t (format "%s\\.\\(out\\|blg\\|aux\\)" filename)))))
 
-(provide 'em-bellani)
+(provide 'em-vitorarins)
 ;;; eshell-functions.el ends here
