@@ -14,3 +14,9 @@ swank
 tramp
 url
 *~
+ac-comphist.dat
+.emacs.desktop
+emms/history
+ido.last
+smex-items
+.emacs.desktop.lock

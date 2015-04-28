@@ -1,7 +1,7 @@
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/")
-	     '("ELPA"      . "http://tromey.com/elpa/"))
+	     '("melpa"      . "http://melpa.org/packages/"))
 
 (package-initialize)
 
