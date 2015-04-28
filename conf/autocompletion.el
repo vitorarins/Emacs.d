@@ -20,15 +20,18 @@
                                     (not (numberp
                                           (compare-strings "*eshell*" 0 7
                                                            (buffer-name
-                                                            (current-buffer)) 0 7)))
-                                    (not (numberp
-                                          (compare-strings "*shell*" 0 6
-                                                           (buffer-name
-                                                            (current-buffer)) 0 6)))))
+                                                            (current-buffer)) 0 7)))))
                          (auto-complete-mode 1))))
 
 ;; tab in insert mode calls autocomplete
 (ac-set-trigger-key "TAB")
-(ac-set-trigger-key "C-c TAB")
 
 (real-global-auto-complete-mode 1)
+
+;; company, another autocomplete engine. Still testing
+;; used primarily as an AC to geiser, an slime like app for scheme.
+(add-to-list 'load-path (concat *my-default-lib* "/company"))
+(autoload 'company-mode "company" nil t)
+
+(add-hook 'scheme-mode-hook
+          (lambda () (company-mode 1)))

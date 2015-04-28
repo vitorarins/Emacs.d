@@ -7,7 +7,7 @@
 (provide 'w3m-load)
 
 ;;;### (autoloads (bookmark-w3m-bookmark-jump) "bookmark-w3m" "bookmark-w3m.el"
-;;;;;;  (19648 52975))
+;;;;;;  (20530 40582))
 ;;; Generated autoloads from bookmark-w3m.el
 
 (autoload 'bookmark-w3m-bookmark-jump "bookmark-w3m" "\
@@ -19,8 +19,8 @@ Default bookmark handler for w3m buffers.
 
 ;;;### (autoloads (w3m-buffer w3m-region w3m-find-file w3m-browse-url
 ;;;;;;  w3m w3m-create-empty-session w3m-gohome w3m-goto-url-new-session
-;;;;;;  w3m-goto-url w3m-download w3m-retrieve) "w3m" "w3m.el" (20492
-;;;;;;  50133))
+;;;;;;  w3m-goto-url w3m-download w3m-retrieve) "w3m" "w3m.el" (20530
+;;;;;;  40582))
 ;;; Generated autoloads from w3m.el
 
 (autoload 'w3m-retrieve "w3m" "\
@@ -177,7 +177,7 @@ See `w3m-region' for the optional arguments.
 ;;;***
 
 ;;;### (autoloads (w3m-antenna w3m-about-antenna) "w3m-antenna" "w3m-antenna.el"
-;;;;;;  (19187 58267))
+;;;;;;  (20530 40582))
 ;;; Generated autoloads from w3m-antenna.el
 
 (autoload 'w3m-about-antenna "w3m-antenna" "\
@@ -195,7 +195,7 @@ Report changes of WEB sites, which is specified in `w3m-antenna-sites'.
 ;;;### (autoloads (w3m-setup-bookmark-menu w3m-about-bookmark w3m-bookmark-view-new-session
 ;;;;;;  w3m-bookmark-view w3m-bookmark-add-current-url-group w3m-bookmark-add-all-urls
 ;;;;;;  w3m-bookmark-add-current-url w3m-bookmark-add-this-url) "w3m-bookmark"
-;;;;;;  "w3m-bookmark.el" (20486 20997))
+;;;;;;  "w3m-bookmark.el" (20530 40582))
 ;;; Generated autoloads from w3m-bookmark.el
 
 (autoload 'w3m-bookmark-add-this-url "w3m-bookmark" "\
@@ -242,8 +242,8 @@ Setup w3m bookmark items in menubar.
 ;;;***
 
 ;;;### (autoloads (w3m-about-cookie w3m-cookie w3m-cookie-get w3m-cookie-set
-;;;;;;  w3m-cookie-shutdown) "w3m-cookie" "w3m-cookie.el" (19449
-;;;;;;  53703))
+;;;;;;  w3m-cookie-shutdown) "w3m-cookie" "w3m-cookie.el" (20530
+;;;;;;  40582))
 ;;; Generated autoloads from w3m-cookie.el
 
 (autoload 'w3m-cookie-shutdown "w3m-cookie" "\
@@ -275,7 +275,7 @@ Make the html contents to display and to enable you to manage cookies.
 ;;;***
 
 ;;;### (autoloads (w3m-dtree w3m-about-dtree) "w3m-dtree" "w3m-dtree.el"
-;;;;;;  (18964 36505))
+;;;;;;  (20530 40582))
 ;;; Generated autoloads from w3m-dtree.el
 
 (autoload 'w3m-about-dtree "w3m-dtree" "\
@@ -291,7 +291,7 @@ If called with 'prefix argument', display all directorys and files.
 
 ;;;***
 
-;;;### (autoloads (w3m-fb-mode) "w3m-fb" "w3m-fb.el" (17681 2386))
+;;;### (autoloads (w3m-fb-mode) "w3m-fb" "w3m-fb.el" (20530 40582))
 ;;; Generated autoloads from w3m-fb.el
 
 (defvar w3m-fb-mode nil "\
@@ -311,8 +311,8 @@ This allows frame-local lists of buffers (tabs).
 
 ;;;***
 
-;;;### (autoloads (w3m-filter) "w3m-filter" "w3m-filter.el" (18560
-;;;;;;  15090))
+;;;### (autoloads (w3m-filter) "w3m-filter" "w3m-filter.el" (20530
+;;;;;;  40582))
 ;;; Generated autoloads from w3m-filter.el
 
 (autoload 'w3m-filter "w3m-filter" "\
@@ -322,8 +322,8 @@ Apply filtering rule of URL against a content in this buffer.
 
 ;;;***
 
-;;;### (autoloads (w3m-fontify-forms) "w3m-form" "w3m-form.el" (20280
-;;;;;;  23920))
+;;;### (autoloads (w3m-fontify-forms) "w3m-form" "w3m-form.el" (20530
+;;;;;;  40582))
 ;;; Generated autoloads from w3m-form.el
 
 (autoload 'w3m-fontify-forms "w3m-form" "\
@@ -337,7 +337,7 @@ Process half-dumped data and fontify forms in this buffer.
 ;;;;;;  w3m-lnum-print-this-url w3m-lnum-edit-this-url w3m-lnum-external-view-this-url
 ;;;;;;  w3m-lnum-save-image w3m-lnum-view-image w3m-lnum-toggle-inline-image
 ;;;;;;  w3m-lnum-universal w3m-lnum-follow w3m-lnum-goto w3m-lnum-mode)
-;;;;;;  "w3m-lnum" "w3m-lnum.el" (20428 8268))
+;;;;;;  "w3m-lnum" "w3m-lnum.el" (20530 40582))
 ;;; Generated autoloads from w3m-lnum.el
 
 (autoload 'w3m-lnum-mode "w3m-lnum" "\
@@ -429,7 +429,7 @@ If no link under point, activate numbering and ask for one.
 ;;;***
 
 ;;;### (autoloads (w3m-namazu w3m-about-namazu) "w3m-namazu" "w3m-namazu.el"
-;;;;;;  (18964 36505))
+;;;;;;  (20530 40582))
 ;;; Generated autoloads from w3m-namazu.el
 
 (autoload 'w3m-about-namazu "w3m-namazu" "\
@@ -445,7 +445,7 @@ Search indexed files with Namazu.
 ;;;***
 
 ;;;### (autoloads (w3m-perldoc w3m-about-perldoc) "w3m-perldoc" "w3m-perldoc.el"
-;;;;;;  (18197 61165))
+;;;;;;  (20530 40582))
 ;;; Generated autoloads from w3m-perldoc.el
 
 (autoload 'w3m-about-perldoc "w3m-perldoc" "\
@@ -461,7 +461,7 @@ View Perl documents.
 ;;;***
 
 ;;;### (autoloads (w3m-search-uri-replace w3m-search-new-session
-;;;;;;  w3m-search) "w3m-search" "w3m-search.el" (20456 12024))
+;;;;;;  w3m-search) "w3m-search" "w3m-search.el" (20530 40582))
 ;;; Generated autoloads from w3m-search.el
 
 (autoload 'w3m-search "w3m-search" "\
@@ -488,7 +488,7 @@ Generate query string for ENGINE from URI matched by last search.
 
 ;;;### (autoloads (w3m-session-last-crashed-session w3m-session-last-autosave-session
 ;;;;;;  w3m-setup-session-menu w3m-session-select w3m-session-crash-recovery-remove
-;;;;;;  w3m-session-save) "w3m-session" "w3m-session.el" (20280 23920))
+;;;;;;  w3m-session-save) "w3m-session" "w3m-session.el" (20530 40582))
 ;;; Generated autoloads from w3m-session.el
 
 (autoload 'w3m-session-save "w3m-session" "\
@@ -524,7 +524,7 @@ Setup w3m session items in menubar.
 ;;;***
 
 ;;;### (autoloads (w3m-replace-symbol) "w3m-symbol" "w3m-symbol.el"
-;;;;;;  (18791 2971))
+;;;;;;  (20530 40582))
 ;;; Generated autoloads from w3m-symbol.el
 
 (autoload 'w3m-replace-symbol "w3m-symbol" "\
@@ -535,7 +535,7 @@ Setup w3m session items in menubar.
 ;;;***
 
 ;;;### (autoloads (w3m-about-weather w3m-weather) "w3m-weather" "w3m-weather.el"
-;;;;;;  (20486 20998))
+;;;;;;  (20530 40582))
 ;;; Generated autoloads from w3m-weather.el
 
 (autoload 'w3m-weather "w3m-weather" "\

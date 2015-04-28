@@ -7,7 +7,7 @@ infodir      = ${datarootdir}/info
 lispdir      = $(prefix)/share/emacs/site-lisp/w3m
 srcdir       = .
 PACKAGEDIR   = NONE
-ICONDIR      = $(prefix)/share/emacs/24.1.50/etc/images/w3m
+ICONDIR      = $(prefix)/share/emacs/24.1/etc/images/w3m
 ADDITIONAL_LOAD_PATH = NONE
 
 SHELL        = /bin/sh
