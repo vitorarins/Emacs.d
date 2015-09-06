@@ -147,7 +147,7 @@
 ;; yasnippet, loads of emacs snippets
 ;; http://code.google.com/p/yasnippet/
 ;; (yas/initialize)
-(yas/load-directory (concat *my-default-lib* "/yasnippet/snippets"))
+;; (yas-load-directory (concat *my-conf* "/snippets"))
 
 ;; undo-tree
 ;; treats undo as a tree
@@ -157,8 +157,8 @@
 ;; starts the emacs server so I can access it with emacsclient.
 (server-start)
 
-;; default browser is chromium
+;; default browser is google chrome
 (setq browse-url-browser-function 'browse-url-generic)
-(setq browse-url-generic-program "chromium-browser")
+(setq browse-url-generic-program "google-chrome")
 
 

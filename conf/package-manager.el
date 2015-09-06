@@ -16,7 +16,6 @@
 		      undo-tree
 		      haskell-mode
                       yasnippet
-                      yasnippet-bundle
                       clojure-mode
                       zenburn-theme)
   "A list of packages to ensure are installed at launch.")
