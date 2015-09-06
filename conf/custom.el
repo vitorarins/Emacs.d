@@ -18,3 +18,25 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;; set multi-term shell to zsh
+(setq multi-term-program "/bin/zsh")
+
+;; set default buffer size to 10000 in mult-term
+(add-hook 'term-mode-hook
+          (lambda ()
+            (setq term-buffer-maximum-size 10000)))
+
+;; Adding go bin path to exec path
+(setq exec-path (append exec-path '("/home/vitorarins/go/bin")))
+
+;; Adding go workspace path
+(setenv "GOPATH" "/home/vitorarins/go")
+
+;; Adding godef jump to go to source code
+(defun my-go-mode-hook ()
+  ; Call Gofmt before saving                                                    
+  (add-hook 'before-save-hook 'gofmt-before-save)
+  ; Godef jump key binding                                                      
+  (local-set-key (kbd "<C-return>") 'godef-jump))
+(add-hook 'go-mode-hook 'my-go-mode-hook)
