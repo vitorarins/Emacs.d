@@ -25,7 +25,9 @@
 ;; set default buffer size to 10000 in mult-term
 (add-hook 'term-mode-hook
           (lambda ()
-            (setq term-buffer-maximum-size 10000)))
+            (setq term-buffer-maximum-size 10000)
+            (setq yas-dont-activate t)))
+
 
 ;; Adding go bin path to exec path
 (setq exec-path (append exec-path '("/home/vitorarins/go/bin")))
