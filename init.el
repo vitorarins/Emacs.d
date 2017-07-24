@@ -3,6 +3,13 @@
 ;; http://sites.google.com/site/steveyegge2/effective-emacs
 
 ;; common lisp compatibility
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (require 'cl) 
 
 (defvar *emacs-load-start* (current-time))
@@ -43,3 +50,4 @@
 ;;          (destructuring-bind (hi lo ms) (current-time)
 ;;            (- (+ hi lo) (+ (first *emacs-load-start*) (second *emacs-load-start*)))))
 (put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)

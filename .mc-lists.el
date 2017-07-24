@@ -7,5 +7,7 @@
 
 (setq mc/cmds-to-run-once
       '(
+        c-electric-delete-forward
+        makefile-previous-dependency
         yas-expand
         ))

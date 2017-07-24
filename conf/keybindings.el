@@ -55,6 +55,10 @@
 ;; multiple-cursors refactoring
 (global-set-key (kbd "<C-f6>") 'mc/mark-all-like-this-dwim)
 
+;; move text with shift
+(global-set-key (kbd "C-S-P") 'move-text-up)
+(global-set-key (kbd "C-S-N") 'move-text-down)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;  Maps swaps [ for ( and vice versa                   ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

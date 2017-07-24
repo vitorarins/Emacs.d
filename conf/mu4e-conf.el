@@ -6,7 +6,7 @@
 (defvar *authinfo-file-path* (expand-file-name "~/.authinfo.gpg"))
 
 ;; default
-(setq mu4e-maildir (expand-file-name "~/Mail/vitorarins"))
+(setq mu4e-maildir (expand-file-name "~/Mail/vitor"))
 
 ;; don't save message to Sent Messages, GMail/IMAP will take care of this
 (setq mu4e-sent-messages-behavior 'delete)
@@ -27,7 +27,7 @@
 ;; something about ourselves
 ;; I don't use a signature...
 (setq
- user-mail-address "vitorarins@gmail.com"
+ user-mail-address "vitor@gmail.com"
  user-full-name    "Vitor Arins"
  mu4e-compose-signature
  (concat

@@ -11,6 +11,9 @@
    (quote
     (("gnu" . "http://elpa.gnu.org/packages/")
      ("melpa" . "http://melpa.org/packages/"))))
+ '(package-selected-packages
+   (quote
+    (markdown-toc markdown-mode+ markdown-mode nash-mode zenburn-theme yaml-mode undo-tree symon smex scala-mode rainbow-delimiters paredit multiple-cursors multi-term move-text mongo let-alist inf-mongo ido-ubiquitous highlight-symbol highlight-parentheses haskell-mode haml-mode go-stacktracer go-snippets go-eldoc go-direx go-complete go-autocomplete gitignore-mode git-timemachine gh fuzzy-match fuzzy f auto-yasnippet auctex async ac-slime ac-cider 2048-game)))
  '(preview-auto-cache-preamble t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -20,7 +23,7 @@
  )
 
 ;; set multi-term shell to zsh
-(setq multi-term-program "/bin/zsh")
+(setq multi-term-program "/usr/bin/nash")
 
 ;; set default buffer size to 10000 in mult-term
 (add-hook 'term-mode-hook
@@ -30,11 +33,11 @@
 
 
 ;; Adding go bin path to exec path
-(setq exec-path (append exec-path '("/home/vitorarins/go/bin")))
+(setq exec-path (append exec-path '("/home/vitor/go/bin")))
 
 ;; Adding go workspace path
-(setenv "GOPATH" "/home/vitorarins/go")
-(load-file "$GOPATH/src/golang.org/x/tools/cmd/oracle/oracle.el")
+(setenv "GOPATH" "/home/vitor/go")
+;;(load-file "$GOPATH/src/golang.org/x/tools/cmd/oracle/oracle.el")
 ;; Adding godef jump to go to source code
 (defun my-go-mode-hook ()
   ; Use goimports instead of go-fmt
@@ -54,3 +57,18 @@
         ))
 
 (yas-global-mode 1)
+
+;; Changing default shell
+
+(setq explicit-shell-file-name "/home/vitor/go/bin/nash")
+(setq shell-file-name "nash")
+(setq explicit-nash-args '("-i"))
+(setenv "SHELL" shell-file-name)
+(add-hook 'comint-output-filter-functions 'comint-strip-ctrl-m)
+
+;; Make f1 initialize shell
+(global-set-key [f1] 'shell)
+
+;; to use nash-mode for sh scripts (instead of sh-mode)
+(add-to-list 'auto-mode-alist '("\\.sh\\'" . nash-mode))
+(add-hook 'nash-mode-hook 'nash-fmt-enable-on-save)
