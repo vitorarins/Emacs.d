@@ -36,7 +36,9 @@
 (setq exec-path (append exec-path '("/home/vitor/go/bin")))
 
 ;; Adding go workspace path
+(setenv "GOROOT" "/home/vitor/goroot")
 (setenv "GOPATH" "/home/vitor/go")
+(setenv "GOBIN" "/home/vitor/go/bin")
 ;;(load-file "$GOPATH/src/golang.org/x/tools/cmd/oracle/oracle.el")
 ;; Adding godef jump to go to source code
 (defun my-go-mode-hook ()
